@@ -1,0 +1,37 @@
+@media (max-width: 1200px) {
+    .main__nav--li-responsive {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .header__list--lefta--responsive {
+        font-size: 14px;
+    }
+
+    .main__nav--blog a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container--responsive {
+        padding: 0 15px;
+    }
+
+    .header__main--nav--responsive {
+        display: none;
+    }
+
+    .header__main--responsive {
+        justify-content: flex-end;
+    }
+
+    .icon_mobile_click {
+        display: block;
+        margin-right: 12px;
+    }
+
+    .icon_mobile_click i {
+        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(28deg) brightness(98%) contrast(109%);
+    }
+}

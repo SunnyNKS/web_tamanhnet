@@ -5,17 +5,627 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Reset web -->
-     <link rel="stylesheet" href="./Assets/css/Reset.css">
+    <link rel="stylesheet" href="./Assets/css/Reset.css">
     <!-- link font chữ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
     <!-- link Favicon -->
     <!-- link icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- linkstyle -->
-     <link rel="stylesheet" href="./Assets/css/style.css">
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <!-- resposive -->
+    <link rel="stylesheet" href="./Assets/css/responsive.css">
     <title>Document</title>
 </head>
 
 <body>
+    <header class="header">
+        <div class="container container--responsive">
+            <div class="header__top">
+                <label for="bar__menu--an">
+                    <div class="icon_mobile_click"> <i class="fa-solid fa-bars"></i> </div>
+                </label>
+                <div class="bar__menu--an">
+                    <input type="checkbox" name="bar__menu--an" id="bar__menu--an" style="display: none;">
+                    <div class="menu__an--container">
+                        <label for="bar__menu--an">
+                            <div class="close_menu"><i class="fa-solid fa-x"></i></div>
+                        </label>
+                        <ul class="menu__an--containerul">
+                            <li class="menu__an--containerli menu__an--containerli1"><a href="https://tamanh.net/"
+                                    aria-current="page">Trang
+                                    chủ</a></li>
+                            <li class="menu__an--containerli menu__an--containerli2">
+                                <a href="https://tamanh.net/giay-da-nam">Giày da nam</a>
+                                <label for="Giay_da--an" class="Giay_da--an"><i
+                                        class="fa-solid fa-angle-right"></i></label>
+                                <div class="Giay__da--an--container">
+                                    <label for="Giay_da--an" class="close_menu-Giay__da--an--lable">
+                                        <div class="close_menu close_menu-Giay__da--an"><i class="fa-solid fa-x"></i>
+                                        </div>
+                                    </label>
+                                    <input type="checkbox" name="Giay_da--an" id="Giay_da--an" style="display: none;">
+                                    <ul class="Giay__da--an--menu">
+                                        <li class="Giay__da--an--menuli">
+                                            <a href="https://tamanh.net/giay-luoi-nam">Giày lười nam</a>
+                                        </li>
+                                        <li class="Giay__da--an--menuli">
+                                            <a href="https://tamanh.net/giay-tang-chieu-cao">Giày tăng chiều cao</a>
+                                        </li>
+                                        <li class="Giay__da--an--menuli">
+                                            <a href="https://tamanh.net/giay-tay-nam">Giày tây nam</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu__an--containerli menu__an--containerli3">
+                                <a href="https://tamanh.net/that-lung-nam">Thắt lưng nam</a>
+                                <label for="That_lung_nam" class="Giay_da--an"><i
+                                        class="fa-solid fa-angle-right"></i></label>
+                                <div class="Giay__da--an--container">
+                                    <label for="That_lung_nam" class="close_menu-Giay__da--an--lable">
+                                        <div class="close_menu close_menu-Giay__da--an"><i class="fa-solid fa-x"></i>
+                                        </div>
+                                    </label>
+                                    <input type="checkbox" name="That_lung_nam" id="That_lung_nam"
+                                        style="display: none;">
+                                    <ul class="Giay__da--an--menu">
+                                        <li class="Giay__da--an--menuli">
+                                            <a href="https://tamanh.net/that-lung-da-bo">Thắt lưng da bò</a>
+                                        </li>
+                                        <li class="Giay__da--an--menuli">
+                                            <a href="https://tamanh.net/that-lung-da-ca-sau">Thắt lưng da cá sấu</a>
+                                        </li>
+                                        <li class="Giay__da--an--menuli">
+                                            <a href="https://tamanh.net/that-lung-quan-jean">Thắt lưng quần jean</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu__an--containerli menu__an--containerli4">
+                                <a href="https://tamanh.net/vi-da-nam">Ví da nam</a>
+                                <label for="Vi_da_nam" class="Giay_da--an"><i
+                                        class="fa-solid fa-angle-right"></i></label>
+                                <div class="Giay__da--an--container">
+                                    <label for="Vi_da_nam" class="close_menu-Giay__da--an--lable">
+                                        <div class="close_menu close_menu-Giay__da--an"><i class="fa-solid fa-x"></i>
+                                        </div>
+                                    </label>
+                                    <input type="checkbox" name="Vi_da_nam" id="Vi_da_nam" style="display: none;">
+                                    <ul class="Giay__da--an--menu">
+                                        <li class="Giay__da--an--menuli">
+                                            <a href="https://tamanh.net/vi-nam-da-bo">Ví da bò</a>
+                                        </li>
+                                        <li class="Giay__da--an--menuli">
+                                            <a href="https://tamanh.net/vi-cam-tay-nam">Ví cầm tay nam</a>
+                                        </li>
+                                        <li class="Giay__da--an--menuli">
+                                            <a href="https://tamanh.net/vi-da-ca-sau">Ví da cá sấu</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu__an--containerli menu__an--containerli5">
+                                <a href="https://tamanh.net/tui-xach-nam">Túi xách da nam</a>
+                                <label for="Tui_xach" class="Giay_da--an"><i
+                                        class="fa-solid fa-angle-right"></i></label>
+                                <div class="Giay__da--an--container">
+                                    <label for="Tui_xach" class="close_menu-Giay__da--an--lable">
+                                        <div class="close_menu close_menu-Giay__da--an"><i class="fa-solid fa-x"></i>
+                                        </div>
+                                    </label>
+                                    <input type="checkbox" name="Tui_xach" id="Tui_xach" style="display: none;">
+                                    <ul class="Giay__da--an--menu">
+                                        <li class="Giay__da--an--menuli">
+                                            <a href="https://tamanh.net/tui-da-deo-cheo">Túi da đeo chéo</a>
+                                        </li>
+                                        <li class="Giay__da--an--menuli">
+                                            <a href="https://tamanh.net/cap-da-nam">Cặp da nam</a>
+                                        </li>
+                                        <li class="Giay__da--an--menuli">
+                                            <a href="https://tamanh.net/tui-dung-ipad">Túi da đựng Ipad</a>
+                                        </li>
+                                        <li class="Giay__da--an--menuli">
+                                            <a href="https://tamanh.net/tui-dung-laptop">Túi da đựng laptop</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu__an--containerli menu__an--containerli6">
+                                <a href="https://tamanh.net/day-da-dong-ho">Dây da đồng hồ</a>
+                                <label for="day_da" class="Giay_da--an"><i class="fa-solid fa-angle-right"></i></label>
+                                <div class="Giay__da--an--container">
+                                    <label for="day_da" class="close_menu-Giay__da--an--lable">
+                                        <div class="close_menu close_menu-Giay__da--an"><i class="fa-solid fa-x"></i>
+                                        </div>
+                                    </label>
+                                    <input type="checkbox" name="day_da" id="day_da" style="display: none;">
+                                    <ul class="Giay__da--an--menu">
+                                        <li class="Giay__da--an--menuli">
+                                            <a href="https://tamanh.net/day-dong-ho-da-ca-sau">Dây đồng hồ da cá sấu</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu__an--containerli menu__an--containerli7">
+                                <a href="https://tamanh.net/gang-tay-da">Găng tay da</a>
+                                <label for="gang_tay" class="Giay_da--an"><i
+                                        class="fa-solid fa-angle-right"></i></label>
+                                <div class="Giay__da--an--container">
+                                    <label for="gang_tay" class="close_menu-Giay__da--an--lable">
+                                        <div class="close_menu close_menu-Giay__da--an"><i class="fa-solid fa-x"></i>
+                                        </div>
+                                    </label>
+                                    <input type="checkbox" name="gang_tay" id="gang_tay" style="display: none;">
+                                    <ul class="Giay__da--an--menu">
+                                        <li class="Giay__da--an--menuli">
+                                            <a href="https://tamanh.net/gang-tay-nam">Găng tay nam</a>
+                                        </li>
+                                        <li class="Giay__da--an--menuli">
+                                            <a href="https://tamanh.net/gang-tay-nu">Găng tay nữ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu__an--containerli menu__an--containerli8"><a
+                                    href="https://tamanh.net/phu-kien-do-da">Phụ kiện đồ da</a></li>
+                            <li class="menu__an--containerli menu__an--containerli9"><a
+                                    href="https://tamanh.net/gioi-thieu">Giới thiệu</a></li>
+                            <li class="menu__an--containerli menu__an--containerli10"><a
+                                    href="https://tamanh.net/cua-hang">Cửa Hàng</a></li>
+                            <li class="menu__an--containerli menu__an--containerli11"><a
+                                    href="https://tamanh.net/lien-he">Liên Hệ</a></li>
+                            <li class="menu__an--containerli menu__an--containerli12"><a
+                                    href="https://tamanh.net/tin-tuc">Tin tức</a></li>
+                            <li class="menu__an--containerli menu__an--containerli13"><a
+                                    href="https://tamanh.net/blog-thoi-trang">Blog Thời Trang</a></li>
 
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__logo">
+                    <a href="https://tamanh.net/" class="logo_h logo_h__img">
+                        <img class="lazyload" src="https://tamanh.net/wp-content/uploads/2020/08/logo-tamanh-02-1-1.png"
+                            alt="Thế Giới Đồ Da Tâm Anh" title="Đồ Da Tâm Anh">
+                    </a>
+                </div>
+                <div class="header__main header__main--responsive">
+                    <div class="header__main--nav header__main--nav--responsive">
+                        <ul class="main__nav-ul">
+                            <li class="main__nav--li main__nav--li1 main__nav--li-responsive"><a class="mega-menu-link"
+                                    href="https://tamanh.net/" aria-current="page" tabindex="0">Trang chủ</a>
+                            </li>
+                            <li class="main__nav--li main__nav--li2 main__nav--li-responsive">
+                                <a class="mega-menu-link" href="https://tamanh.net/danh-muc-san-pham"
+                                    aria-expanded="false" tabindex="0">Sản
+                                    phẩm<span class="mega-indicator" aria-hidden="true"></span></a>
+                                <ul class="header__sanpham">
+                                    <li class="header__list">
+                                        <div class="container__sanpham">
+                                            <div class="header__list--left">
+                                                <ul>
+                                                    <li class="header__list--leftli header__list--leftli1"><a href=""
+                                                            class="header__list--lefta header__list--lefta1 header__list--lefta--responsive">Tất
+                                                            cả sản
+                                                            phẩm</a></li>
+                                                    <li class="header__list--leftli header__list--leftli2"><a href=""
+                                                            class="header__list--lefta header__list--lefta2 header__list--lefta--responsive">Giày
+                                                            da
+                                                            nam</a></li>
+                                                    <li class="header__list--leftli header__list--leftli3"><a href=""
+                                                            class="header__list--lefta header__list--lefta3 header__list--lefta--responsive">Ví
+                                                            da
+                                                            nam</a></li>
+                                                    <li class="header__list--leftli header__list--leftli4"><a href=""
+                                                            class="header__list--lefta header__list--lefta4 header__list--lefta--responsive">Thắt
+                                                            lưng
+                                                            nam</a></li>
+                                                    <li class="header__list--leftli header__list--leftli5"><a href=""
+                                                            class="header__list--lefta header__list--lefta5 header__list--lefta--responsive">Túi
+                                                            xách
+                                                            da nam</a></li>
+                                                    <li class="header__list--leftli header__list--leftli6"><a href=""
+                                                            class="header__list--lefta header__list--lefta6 header__list--lefta--responsive">Găng
+                                                            tay
+                                                            da</a></li>
+                                                    <li class="header__list--leftli header__list--leftli7"><a href=""
+                                                            class="header__list--lefta header__list--lefta7 header__list--lefta--responsive">Dây
+                                                            da
+                                                            đồng hồ</a></li>
+                                                    <li class="header__list--leftli header__list--leftli8"><a href=""
+                                                            class="header__list--lefta header__list--lefta8 header__list--lefta--responsive">Phụ
+                                                            kiện
+                                                            đồ da</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="header__list--right">
+                                                <div class="header__list--right_container">
+                                                    <!-- tất cả sản phẩm -->
+                                                    <div class="all__tab tab__tat_ca_san_pham">
+                                                        <div class="hearder__title--tab">Sản phẩm nổi bật
+                                                        </div>
+                                                        <div class="san_pham__tag san_pham__tag1">
+                                                            <!-- the tat ca san pham tag 1 -->
+                                                            <div class="content_tag">
+                                                                <div class="content_tag--img"><a
+                                                                        href="https://tamanh.net/tui-deo-cheo-tta9111d0201-d.html"><img
+                                                                            src="https://tamanh.net/wp-content/uploads/2024/12/tui-deo-cheo-phoi-khoa-keo-TTA9111D0201-D-1.jpg"
+                                                                            alt="Túi đeo chéo phối khóa kéo phong cách TTA9111D0201-D"></a>
+                                                                </div>
+                                                                <div class="content_tag--content">
+                                                                    <a
+                                                                        href="https://tamanh.net/tui-deo-cheo-tta9111d0201-d.html">Túi
+                                                                        đeo chéo phối khóa
+                                                                        kéo phong cách
+                                                                        TTA9111D0201-D</a>
+                                                                </div>
+                                                            </div>
+                                                            <!-- the tat ca san pham tag 2 -->
+                                                            <div class="content_tag">
+                                                                <div class="content_tag--img">
+                                                                    <div class="thumbnail"><a
+                                                                            href="https://tamanh.net/that-lung-nam-dep-mat-khoa-tao-hinh-noi-da-ca-sau-d390-202002.html"><img
+                                                                                src="https://tamanh.net/wp-content/uploads/2020/06/day-nit-da-phoi-hoa-tiet-D390-202002-1.jpg"
+                                                                                alt="Thắt lưng nam mặt khóa tạo hình nổi da cá sấu D390-202002"></a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content_tag--content">
+                                                                    <a
+                                                                        href="https://tamanh.net/that-lung-nam-dep-mat-khoa-tao-hinh-noi-da-ca-sau-d390-202002.html">Thắt
+                                                                        lưng nam mặt khóa
+                                                                        tạo hình nổi da cá
+                                                                        sấu D390-202002</a>
+                                                                </div>
+                                                            </div>
+                                                            <!-- the tat ca san pham tag 3 -->
+                                                            <div class="content_tag">
+                                                                <div class="content_tag--img"><a
+                                                                        href="https://tamanh.net/vi-nam-dang-ngang-co-dien-vntan-31n.html"><img
+                                                                            src="https://tamanh.net/wp-content/uploads/2019/03/vi-nam-dang-ngang-VNTAN-31N-5.jpg"
+                                                                            alt="Ví nam dáng ngang cổ điển VNTAN-31N"></a>
+                                                                </div>
+                                                                <div class="content_tag--content">
+                                                                    <a
+                                                                        href="https://tamanh.net/vi-nam-dang-ngang-co-dien-vntan-31n.html">Ví
+                                                                        nam dáng ngang cổ
+                                                                        điển VNTAN-31N</a>
+                                                                </div>
+                                                            </div>
+                                                            <!-- the tat ca san pham tag 4 -->
+                                                            <div class="content_tag">
+                                                                <div class="content_tag--img"><a
+                                                                        href="https://tamanh.net/giay-buoc-day-cong-so-gnta5502-d.html"><img
+                                                                            src="https://tamanh.net/wp-content/uploads/2016/10/giay-da-nam-derby-GNTA5502-D-1.jpg"
+                                                                            alt="Giày da nam buộc dây da bóng GNTA5502-D"></a>
+                                                                </div>
+                                                                <div class="content_tag--content">
+                                                                    <a
+                                                                        href="https://tamanh.net/giay-buoc-day-cong-so-gnta5502-d.html">Giày
+                                                                        da nam buộc dây da
+                                                                        bóng GNTA5502-D</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Giày da Nam -->
+                                                    <div class="all__tab tab__giay_da_nam">
+                                                        <div class="hearder__title--tab">Giày da nam
+                                                        </div>
+                                                        <div class="san_pham__tag san_pham__tag1">
+                                                            <!-- the Giày da Nam tag 1 -->
+                                                            <div class="content_tag">
+                                                                <div class="content_tag--img"> <a
+                                                                        href="https://tamanh.net/giay-luoi-nam"><img
+                                                                            src="https://tamanh.net/wp-content/uploads/2024/10/banner-giay-luoi-nam-2024-161x161.jpg"
+                                                                            alt="Giày lười nam" width="161"
+                                                                            height="161"></a>
+                                                                </div>
+                                                                <div class="content_tag--content"><a
+                                                                        href="https://tamanh.net/giay-luoi-nam">Giày
+                                                                        lười nam</a>
+                                                                </div>
+                                                            </div>
+                                                            <!-- the Giày da Nam tag 2 -->
+                                                            <div class="content_tag">
+                                                                <div class="content_tag--img">
+                                                                    <div class="thumbnail"><a
+                                                                            href="https://tamanh.net/giay-tang-chieu-cao"><img
+                                                                                src="https://tamanh.net/wp-content/uploads/2024/10/banner-giay-tang-chieu-cao-2024-161x161.jpg"
+                                                                                alt="Giày tăng chiều cao" width="161"
+                                                                                height="161"></a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content_tag--content">
+                                                                    <a href="https://tamanh.net/giay-tang-chieu-cao">Giày
+                                                                        tăng chiều cao</a>
+                                                                </div>
+                                                            </div>
+                                                            <!-- the Giày da Nam tag 3 -->
+                                                            <div class="content_tag">
+                                                                <div class="content_tag--img"><a
+                                                                        href="https://tamanh.net/giay-tay-nam"><img
+                                                                            src="https://tamanh.net/wp-content/uploads/2024/10/banner-giay-tay-nam-2024-161x161.jpg"
+                                                                            alt="Giày tây nam" width="161"
+                                                                            height="161"></a>
+                                                                </div>
+                                                                <div class="content_tag--content">
+                                                                    <a href="https://tamanh.net/giay-tay-nam">Giày
+                                                                        tây nam</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Ví da nam -->
+                                                    <div class="all__tab tab__vi_da_nam">
+                                                        <div class="hearder__title--tab">Ví da nam
+                                                        </div>
+                                                        <div class="san_pham__tag san_pham__tag1">
+                                                            <!-- the Ví da nam tag 1 -->
+                                                            <div class="content_tag">
+                                                                <div class="content_tag--img"><a
+                                                                        href="https://tamanh.net/vi-cam-tay-nam"><img
+                                                                            src="https://tamanh.net/wp-content/uploads/2024/10/banner-vi-cam-tay-nam-2024-161x161.jpg"
+                                                                            alt="Ví cầm tay nam" width="161"
+                                                                            height="161"></a>
+                                                                </div>
+                                                                <div class="content_tag--content">
+                                                                    <a href="https://tamanh.net/vi-cam-tay-nam">Ví
+                                                                        cầm tay nam</a>
+                                                                </div>
+                                                            </div>
+                                                            <!-- the Ví da nam tag 2 -->
+                                                            <div class="content_tag">
+                                                                <div class="content_tag--img">
+                                                                    <div class="thumbnail"><a
+                                                                            href="https://tamanh.net/vi-nam-da-bo"><img
+                                                                                src="https://tamanh.net/wp-content/uploads/2024/10/banner-vi-da-bo-nam-161x161.jpg"
+                                                                                alt="Ví da bò" width="161"
+                                                                                height="161"></a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content_tag--content">
+                                                                    <a href="https://tamanh.net/vi-nam-da-bo">Ví
+                                                                        da bò</a>
+                                                                </div>
+                                                            </div>
+                                                            <!-- the Ví da nam tag 3 -->
+                                                            <div class="content_tag">
+                                                                <div class="content_tag--img"><a
+                                                                        href="https://tamanh.net/vi-da-ca-sau"><img
+                                                                            src="https://tamanh.net/wp-content/uploads/2024/10/banner-vi-da-ca-sau-2024-161x161.jpg"
+                                                                            alt="Ví da cá sấu" width="161"
+                                                                            height="161"></a>
+                                                                </div>
+                                                                <div class="content_tag--content">
+                                                                    <a href="https://tamanh.net/vi-da-ca-sau">Ví
+                                                                        da cá sấu</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Thắt lưng nam-->
+                                                    <div class="all__tab tab__That_lung_nam">
+                                                        <div class="hearder__title--tab">Thắt lưng nam
+                                                        </div>
+                                                        <div class="san_pham__tag san_pham__tag1">
+                                                            <!-- the Ví da nam tag 1 -->
+                                                            <div class="content_tag">
+                                                                <div class="content_tag--img"><a
+                                                                        href="https://tamanh.net/that-lung-da-bo"><img
+                                                                            src="https://tamanh.net/wp-content/uploads/2024/10/banner-that-lung-da-bo-2024-161x161.jpg"
+                                                                            alt="Thắt lưng da bò" width="161"
+                                                                            height="161"></a>
+                                                                </div>
+                                                                <div class="content_tag--content">
+                                                                    <a href="https://tamanh.net/that-lung-da-bo">Thắt
+                                                                        lưng da bò</a>
+                                                                </div>
+                                                            </div>
+                                                            <!-- the Ví da nam tag 2 -->
+                                                            <div class="content_tag">
+                                                                <div class="content_tag--img">
+                                                                    <div class="thumbnail"><a
+                                                                            href="https://tamanh.net/that-lung-da-ca-sau"><img
+                                                                                src="https://tamanh.net/wp-content/uploads/2024/10/banner-that-lung-da-ca-sau-2024-161x161.jpg"
+                                                                                alt="Thắt lưng da cá sấu" width="161"
+                                                                                height="161"></a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content_tag--content">
+                                                                    <a href="https://tamanh.net/that-lung-da-ca-sau">Thắt
+                                                                        lưng da cá sấu</a>
+                                                                </div>
+                                                            </div>
+                                                            <!-- the Ví da nam tag 3 -->
+                                                            <div class="content_tag">
+                                                                <div class="content_tag--img"><a
+                                                                        href="https://tamanh.net/that-lung-quan-jean"><img
+                                                                            src="https://tamanh.net/wp-content/uploads/2024/10/banner-that-lung-quan-jean-2024-161x161.jpg"
+                                                                            alt="Thắt lưng quần jean" width="161"
+                                                                            height="161"></a>
+                                                                </div>
+                                                                <div class="content_tag--content">
+                                                                    <a href="https://tamanh.net/that-lung-quan-jean">Thắt
+                                                                        lưng quần jean</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Túi xách da nam -->
+                                                    <div class="all__tab tab__Tui_xach_da_nam">
+                                                        <div class="hearder__title--tab">Túi xách da nam
+                                                        </div>
+                                                        <div class="san_pham__tag san_pham__tag1">
+                                                            <!-- the Túi xách da nam tag 1 -->
+                                                            <div class="content_tag">
+                                                                <div class="content_tag--img"><a
+                                                                        href="https://tamanh.net/tui-da-deo-cheo"><img
+                                                                            src="https://tamanh.net/wp-content/uploads/2025/05/banner-tui-da-deo-cheo-nam-161x161.jpg"
+                                                                            alt="Túi da đeo chéo" width="161"
+                                                                            height="161"></a>
+                                                                </div>
+                                                                <div class="content_tag--content">
+                                                                    <a href="https://tamanh.net/tui-da-deo-cheo">Túi
+                                                                        da đeo chéo</a>
+                                                                </div>
+                                                            </div>
+                                                            <!-- the Túi xách da nam tag 2 -->
+                                                            <div class="content_tag">
+                                                                <div class="content_tag--img"><a
+                                                                        href="https://tamanh.net/tui-dung-ipad"><img
+                                                                            src="https://tamanh.net/wp-content/uploads/2024/10/banner-tui-dung-ipad-2024-161x161.jpg"
+                                                                            alt="Túi da đựng Ipad" width="161"
+                                                                            height="161"></a>
+                                                                </div>
+                                                                <div class="content_tag--content">
+                                                                    <a href="https://tamanh.net/tui-dung-ipad">Túi
+                                                                        da đựng Ipad</a>
+                                                                </div>
+                                                            </div>
+                                                            <!-- the Túi xách da nam tag 3 -->
+                                                            <div class="content_tag">
+                                                                <div class="content_tag--img"><a
+                                                                        href="https://tamanh.net/cap-da-nam"><img
+                                                                            src="https://tamanh.net/wp-content/uploads/2024/10/banner-cap-da-nam-2024-161x161.jpg"
+                                                                            alt="Cặp da nam" width="161"
+                                                                            height="161"></a>
+                                                                </div>
+                                                                <div class="content_tag--content">
+                                                                    <a href="https://tamanh.net/cap-da-nam">Cặp
+                                                                        da nam</a>
+                                                                </div>
+                                                            </div>
+                                                            <!-- the Túi xách da nam tag 4 -->
+                                                            <div class="content_tag">
+                                                                <div class="content_tag--img">
+                                                                    <div class="thumbnail"><a
+                                                                            href="https://tamanh.net/tui-dung-laptop"><img
+                                                                                src="https://tamanh.net/wp-content/uploads/2024/10/banner-tui-dung-lap-top-2024-161x161.jpg"
+                                                                                alt="Túi da đựng laptop" width="161"
+                                                                                height="161"></a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content_tag--content">
+                                                                    <a href="https://tamanh.net/tui-dung-laptop">Túi
+                                                                        da đựng laptop</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Găng tay da -->
+                                                    <div class="all__tab tab__Gang_tay_da">
+                                                        <div class="hearder__title--tab">Găng tay da
+                                                        </div>
+                                                        <div class="san_pham__tag san_pham__tag1">
+                                                            <!-- the Găng tay da tag 1 -->
+                                                            <div class="content_tag">
+                                                                <div class="content_tag--img"><a
+                                                                        href="https://tamanh.net/gang-tay-nam"><img
+                                                                            src="https://tamanh.net/wp-content/uploads/2024/10/banner-gang-tay-da-nam-2024-161x161.jpg"
+                                                                            alt="Găng tay nam" width="161"
+                                                                            height="161"></a>
+                                                                </div>
+                                                                <div class="content_tag--content">
+                                                                    <a href="https://tamanh.net/gang-tay-nam">Găng
+                                                                        tay nam</a>
+                                                                </div>
+                                                            </div>
+                                                            <!-- the Găng tay da tag 2 -->
+                                                            <div class="content_tag">
+                                                                <div class="content_tag--img"><a
+                                                                        href="https://tamanh.net/gang-tay-nu"><img
+                                                                            src="https://tamanh.net/wp-content/uploads/2024/10/banner-gang-tay-da-nu-2024-161x161.jpg"
+                                                                            alt="Găng tay nữ" width="161"
+                                                                            height="161"></a>
+                                                                </div>
+                                                                <div class="content_tag--content">
+                                                                    <a href="https://tamanh.net/gang-tay-nu">Găng
+                                                                        tay nữ</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Dây da đồng hồ-->
+                                                    <div class="all__tab tab__Day_da_đong_ho">
+                                                        <div class="hearder__title--tab">Dây da đồng hồ
+                                                        </div>
+                                                        <div class="san_pham__tag san_pham__tag1">
+                                                            <!-- the Dây da đồng hồ tag 1 -->
+                                                            <div class="content_tag">
+                                                                <div class="content_tag--img"><a
+                                                                        href="https://tamanh.net/day-dong-ho-da-ca-sau"><img
+                                                                            src="https://tamanh.net/wp-content/uploads/2024/10/banner-day-da-dong-ho-2024-161x161.jpg"
+                                                                            alt="Dây đồng hồ da cá sấu" width="161"
+                                                                            height="161"></a>
+                                                                </div>
+                                                                <div class="content_tag--content">
+                                                                    <a href="https://tamanh.net/day-dong-ho-da-ca-sau">Dây
+                                                                        đồng hồ da cá
+                                                                        sấu</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Phụ kiện đồ da-->
+                                                    <div class="all__tab tab__Phu_kien_do_da">
+                                                        <div class="hearder__title--tab">Phụ kiện đồ da
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                </ul>
+                            <li class="main__nav--li main__nav--li3 main__nav--li-responsive"><a class="mega-menu-link"
+                                    href="https://tamanh.net/gioi-thieu" tabindex="0">Giới thiệu</a>
+                            </li>
+                            <li class="main__nav--li main__nav--li4 main__nav--li-responsive "><a class="mega-menu-link"
+                                    href="/cua-hang" tabindex="0">Cửa
+                                    hàng</a>
+                            </li>
+                            <li class="main__nav--li main__nav--li5 main__nav--li-responsive">
+                                <a class="mega-menu-link" aria-expanded="false" tabindex="0">Blog<span
+                                        class="mega-indicator" aria-hidden="true"></span>
+                                </a>
+                                <ul class="main__nav--blog">
+                                    <li class="main__nav--blog">
+                                        <ul>
+                                            <li class="nav__bloc--tin_tuc">
+                                                <a class="mega-menu-link" href="https://tamanh.net/tin-tuc">Tin tức</a>
+                                            </li>
+                                            <li class="nav__bloc--thoi_trang">
+                                                <a class="mega-menu-link" href="https://tamanh.net/blog-thoi-trang">Blog
+                                                    Thời Trang</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="main__nav--li main__nav--li6 main__nav--li-responsive"><a class="mega-menu-link"
+                                    href="https://tamanh.net/lien-he" tabindex="0">Liên Hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__right--contact">
+                        <i class="fa-solid fa-magnifying-glass-location"></i>
+                    </div>
+                    <div class="header_right--buy">
+                        <a class="title_cart cart-contents" href="https://tamanh.net/gio-hang"
+                            title="View your shopping cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="cart-title"> <span class="count">0</span> </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script src="./Assets/javascip.js"></script>
 </body>
 
 </html>
